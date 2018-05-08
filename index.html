@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shopify Tech Challenge</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header>
+    <section class="email-signup wrapper">
+      <!-- heading -->
+      <div class="heading">
+        <h1>Stay up to date with ecommerce trends <span class="hzrule">wi</span>th Shopify's newsletter</h1>
+      </div>
+  </header>
+  <!-- input field -->
+  <main>
+    <div class="input-field wrapper">
+      <p>Subscribe for free marketing tips</p>
+
+      <form method="POST" name="validation">
+        <label for="email" class="visually-hidden">Email</label>
+        <input type="email" name="email" placeholder="Email Address" id="email" required="true">
+
+        <label for="interested" class="visually-hidden">Interested In</label>
+        <select name="interested" id="interested">
+            <option value="" disabled selected>Interested in...</option>
+            <option value="marketing">Marketing</option>
+            <option value="frontEndDevelopment">Front End Development</option>
+            <option value="backEndDevelopment">Back End Development</option>
+            <option value="uiUX">UI/UX</option>
+        </select>
+
+        <div class="invalid">
+          <p>Please enter a valid email address</p>
+        </div>
+
+      <label for="" class="visually-hidden"></label>
+      <input type="submit" value="Sign up now" id="validate">
+      </form>
+    </div>
+
+    <!-- confirmation -->
+    <div class="confirmation wrapper">
+      <p>Thanks for subscribing</p>
+      <p>You'll start receiving free tips and resources soon.</p>
+    </div>
+
+    </section>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
