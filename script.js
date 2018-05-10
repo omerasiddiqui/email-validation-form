@@ -17,6 +17,7 @@ function validate() {
     console.log(document.querySelector("#interested").value
   );
   $("input").prop('disabled', true);
+  $(".invalid").addClass("hide");
 
 // 2 second timer
 // Confirmation message

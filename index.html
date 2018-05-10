@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -23,8 +22,10 @@
       <p>Subscribe for free marketing tips</p>
 
       <form method="POST" name="validation">
+        <div class="input-forms">
         <label for="email" class="visually-hidden">Email</label>
         <input type="email" name="email" placeholder="Email Address" id="email" required="true">
+
 
         <label for="interested" class="visually-hidden">Interested In</label>
         <select name="interested" id="interested">
@@ -34,6 +35,8 @@
             <option value="backEndDevelopment">Back End Development</option>
             <option value="uiUX">UI/UX</option>
         </select>
+          </div>
+
 
         <div class="invalid">
           <p>Please enter a valid email address</p>
@@ -52,9 +55,6 @@
 
     </section>
   </main>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="script.js"></script>
 </body>
 
 </html>

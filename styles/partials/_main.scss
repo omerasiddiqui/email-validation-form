@@ -1,3 +1,5 @@
+// styles
+
 html {
   font-size: 62.5%;
 }
@@ -21,7 +23,13 @@ h1 {
 
 .input-field {
   padding: 25px 0;
-  /* display: none; */
+  display: flex;
+  flex-direction: column;
+}
+
+.input-forms {
+  display: flex;
+  justify-content: space-between;
 }
 
 input[type=email], input[type=submit], select{
@@ -31,12 +39,11 @@ input[type=email], input[type=submit], select{
 }
 
 input[type=email] {
-  width: 59%;
+  width: 58%;
 }
 
 select {
-  width: 40%;
-
+  width: 38%;
 }
 
 input[type=submit]{
@@ -71,7 +78,7 @@ input[type=submit]{
   display: none;
 }
 
-@media (max-width: 738px) {
+@media (max-width: $mobile) {
   body {
     text-align: center;
     display: flex;
@@ -79,20 +86,15 @@ input[type=submit]{
     align-items: center;
     padding: 50px 0;
   }
-
   h1 {
     font-size: 2.8rem;
   }
-
-  .hzrule {
-    border-bottom: none;
-  }
-
   input[type=email], select, input[type=submit] {
     text-align: center;
-    padding: 30px;
   }
-
+  input[type=email], select {
+    padding: 10% 5%;
+  }
   input[type=email] {
     width: 100%;
     margin: 30px 0;
@@ -101,12 +103,22 @@ input[type=submit]{
     width: 100%;
     margin-bottom: 30px;
     text-align-last: center;
+    background: white;
   }
-
   input[type=submit]{
     font-size: 2.2rem;
+    padding: 10% 5% 19%;
   }
-
-
-
+  .wrapper {
+    width: 90%;
+  }
+  .input-forms {
+    flex-direction: column;
+  }
+   p {
+    font-size: 2.3rem;
+  }
+  .hzrule {
+    border-bottom: none;
+  }
 }
