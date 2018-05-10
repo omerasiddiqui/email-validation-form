@@ -185,6 +185,28 @@ body {
 h1 {
   font-size: 2.4rem; }
 
+input[type=email], input[type=submit], select {
+  border-radius: 5px;
+  padding: 15px;
+  height: 50px; }
+
+input[type=email] {
+  width: 58%; }
+
+select {
+  width: 38%; }
+
+input[type=submit] {
+  width: 100%;
+  margin: 15px 0;
+  font-weight: bold;
+  background: #5c6ac4;
+  color: white;
+  border: 0; }
+
+.heading {
+  line-height: 1.30; }
+
 .hzrule {
   padding-bottom: 15px;
   border-bottom: 2px solid #7AB55C; }
@@ -207,25 +229,6 @@ h1 {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-input[type=email], input[type=submit], select {
-  border-radius: 5px;
-  padding: 15px;
-  height: 50px; }
-
-input[type=email] {
-  width: 58%; }
-
-select {
-  width: 38%; }
-
-input[type=submit] {
-  width: 100%;
-  margin: 15px 0;
-  font-weight: bold;
-  background: #5c6ac4;
-  color: white;
-  border: 0; }
-
 .invalid {
   color: #C23628;
   font-weight: bold;
@@ -244,6 +247,7 @@ input[type=submit] {
 .hide {
   display: none; }
 
+/* media breakpoint */
 @media (max-width: 738px) {
   body {
     text-align: center;
@@ -260,6 +264,8 @@ input[type=submit] {
     padding: 50px 0; }
   h1 {
     font-size: 2.8rem; }
+  p {
+    font-size: 2.3rem; }
   input[type=email], select, input[type=submit] {
     text-align: center; }
   input[type=email], select {
@@ -282,7 +288,5 @@ input[type=submit] {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-  p {
-    font-size: 2.3rem; }
   .hzrule {
     border-bottom: none; } }
